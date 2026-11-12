@@ -1,0 +1,4 @@
+# dsh-quad-layout bundle：把四栏布局插进当前 profile 的插件列表
+- insert:
+    - id: dsh-quad-layout
+      name: dsh-quad-layout

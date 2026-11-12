@@ -1,0 +1,42 @@
+{
+  "name": "dsh-quad-layout",
+  "version": "0.1.0",
+  "description": "Four-column DSH layout: split the left sidebar into a 56px icon rail plus a full-height workspace column.",
+  "type": "module",
+  "license": "MIT",
+  "author": "lmmcsb",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "layout",
+    "sidebar"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lmmcsb/dsh-quad-layout.git"
+  },
+  "homepage": "https://github.com/lmmcsb/dsh-quad-layout#readme",
+  "bugs": {
+    "url": "https://github.com/lmmcsb/dsh-quad-layout/issues"
+  },
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  }
+}
